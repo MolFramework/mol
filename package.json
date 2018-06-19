@@ -1,0 +1,28 @@
+{
+  "name": "mol",
+  "version": "1.0.0",
+  "description": "mol framework. list of mol modules",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flkt-crnpio/mol.git"
+  },
+  "keywords": [
+    "mol",
+    "mol-framework",
+    "scss",
+    "sass",
+    "css",
+    "frontend-framework"
+  ],
+  "author": "flkt <flkt.crnpio@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/flkt-crnpio/mol/issues"
+  },
+  "homepage": "https://github.com/flkt-crnpio/mol#readme",
+  "dependencies": {
+    "m.grid": "git+https://github.com/flkt-crnpio/m.grid.git",
+    "m.mol": "git+https://github.com/flkt-crnpio/m.mol.git",
+    "m.normalize": "git+https://github.com/flkt-crnpio/m.normalize.git"
+  }
+}
