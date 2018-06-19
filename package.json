@@ -22,7 +22,7 @@
   "homepage": "https://github.com/flkt-crnpio/mol#readme",
   "dependencies": {
     "m.grid": "git+https://github.com/flkt-crnpio/m.grid.git",
-    "m.mol": "git+https://github.com/flkt-crnpio/m.mol.git",
+    "m.core": "git+https://github.com/flkt-crnpio/m.core.git",
     "m.normalize": "git+https://github.com/flkt-crnpio/m.normalize.git"
   }
 }
