@@ -10,8 +10,8 @@
 - [m.normalize](https://github.com/flkt-crnpio/m.normalize)
 Para configurar los elementos de html consistentemente entre los navegadores.
 
-- [m.mol](https://github.com/flkt-crnpio/m.mol)
-Módulo base. Administra los estilos las etiquetas de html, clases generales de atributos OOCSS para grupos de elementos y contiene estilos muy generalizados en su uso como el switch con checkboxes.
+- [m.core](https://github.com/flkt-crnpio/m.core)
+Módulo principal. Administra los estilos las etiquetas de html, clases generales de atributos OOCSS para grupos de elementos y contiene estilos muy generalizados en su uso como el switch con checkboxes.
 
 - [m.grid](https://github.com/flkt-crnpio/m.grid)
 Módulo de cruadrícula basada en flexbox. Administra los tamaños de los contenedores, tamaño de las celdas, su alineación, el espacio entre las ellas y la cantidad de celdas por fila o columna.
