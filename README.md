@@ -4,9 +4,17 @@
 
  *Mol is a modular framework of CSS whose main objective is to simplify and save the time of development and loading of style sheets. Where each module can be used alone or together keeping the general characteristics of the style manipulated by variable files (one per module), avoiding overwriting classes and reducing the effort to reach the final design of each project.*
 
------------
+___
+
+### Agrega MolFramework a tu proyecto
+
+```sh
+npm install --save https://github.com/flkt-crnpio/mol.git
+```
+___
 
 ### Módulos Publicados
+
 - [m.normalize](https://github.com/flkt-crnpio/m.normalize)
 Para configurar los elementos de html consistentemente entre los navegadores.
 
@@ -20,6 +28,15 @@ Módulo de cruadrícula basada en flexbox. Administra los tamaños de los conten
 - [m.colors](https://github.com/flkt-crnpio/m.colors)
 - [m.columns](https://github.com/flkt-crnpio/m.columns)
 
------------
+___
 
-( ﾟ▽ﾟ)/ Cualquier pregunta, comentario, sugerencia y/o corrección, escríbanme a [@flktcrnpio](https://twitter.com/flktcrnpio) en Twitter.
+### Probado en
+* Brave
+* Chrome
+* Firefox
+* Opera
+* Safari
+
+___
+
+( ﾟ▽ﾟ)/ hola! [@flktcrnpio](https://twitter.com/flktcrnpio) en twitter
