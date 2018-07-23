@@ -1,6 +1,6 @@
 {
   "name": "mol",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "mol framework. list of mol modules",
   "repository": {
     "type": "git",
@@ -21,8 +21,8 @@
   },
   "homepage": "https://github.com/flkt-crnpio/mol#readme",
   "dependencies": {
-    "m.grid": "git+https://github.com/flkt-crnpio/m.grid.git",
-    "m.core": "git+https://github.com/flkt-crnpio/m.core.git",
-    "m.normalize": "git+https://github.com/flkt-crnpio/m.normalize.git"
+    "m.core": "git+https://github.com/flkt-crnpio/m.core.git#v2.0.2",
+    "m.grid": "git+https://github.com/flkt-crnpio/m.grid.git#v1.1.0",
+    "m.normalize": "git+https://github.com/flkt-crnpio/m.normalize.git#v1.1.6"
   }
 }

@@ -15,13 +15,13 @@ ___
 
 ### Módulos Publicados
 
-- [m.normalize](https://github.com/flkt-crnpio/m.normalize)
+- [m.normalize](https://github.com/flkt-crnpio/m.normalize) v1.1.6
 Para configurar los elementos de html consistentemente entre los navegadores.
 
-- [m.core](https://github.com/flkt-crnpio/m.core)
+- [m.core](https://github.com/flkt-crnpio/m.core) v2.0.2
 Módulo principal. Administra los estilos las etiquetas de html, clases generales de atributos OOCSS para grupos de elementos y contiene estilos muy generalizados en su uso como el switch con checkboxes.
 
-- [m.grid](https://github.com/flkt-crnpio/m.grid)
+- [m.grid](https://github.com/flkt-crnpio/m.grid) v1.1.0
 Módulo de cruadrícula basada en flexbox. Administra los tamaños de los contenedores, tamaño de las celdas, su alineación, el espacio entre las ellas y la cantidad de celdas por fila o columna.
 
 ### En proceso
@@ -39,4 +39,4 @@ ___
 
 ___
 
-( ﾟ▽ﾟ)/ hola! [@flktcrnpio](https://twitter.com/flktcrnpio) en twitter
+( ﾟ▽ﾟ)/ hola! [@MolFramework](https://twitter.com/MolFramework) en Twitter
