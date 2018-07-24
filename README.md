@@ -18,7 +18,7 @@ ___
 - [m.normalize](https://github.com/flkt-crnpio/m.normalize) v1.1.6
 Para configurar los elementos de html consistentemente entre los navegadores.
 
-- [m.core](https://github.com/flkt-crnpio/m.core) v2.0.2
+- [m.core](https://github.com/flkt-crnpio/m.core) v2.0.3
 Módulo principal. Administra los estilos las etiquetas de html, clases generales de atributos OOCSS para grupos de elementos y contiene estilos muy generalizados en su uso como el switch con checkboxes.
 
 - [m.grid](https://github.com/flkt-crnpio/m.grid) v1.1.0
