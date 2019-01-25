@@ -1,28 +1,38 @@
 {
   "name": "mol",
-  "version": "1.1.1",
-  "description": "mol framework. list of mol modules",
+  "version": "1.0.0",
+  "description": "Modular framework of CSS whose main objective is to simplify and save the time of development and loading of style sheets",
+  "scripts": {
+    "dist": "sass scss/mol.scss:dist/mol.min.css --style compressed",
+    "docs": "npm run scss | npm run start",
+    "start": "browser-sync start --server 'docs' --files 'docs'",
+    "scss": "sass --watch scss/mol.scss:docs/mol.css --style expanded"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/flkt-crnpio/mol.git"
+    "url": "git+https://github.com/MolFramework/mol.git"
   },
   "keywords": [
     "mol",
-    "mol-framework",
-    "scss",
     "sass",
+    "scss",
     "css",
-    "frontend-framework"
+    "frontend",
+    "framework",
+    "mol-framework"
   ],
   "author": "flkt <flkt.crnpio@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/flkt-crnpio/mol/issues"
+    "url": "https://github.com/MolFramework/mol/issues"
   },
-  "homepage": "https://github.com/flkt-crnpio/mol#readme",
+  "homepage": "https://github.com/MolFramework/mol#readme",
   "dependencies": {
-    "m.core": "git+https://github.com/flkt-crnpio/m.core.git#v2.0.5",
-    "m.grid": "git+https://github.com/flkt-crnpio/m.grid.git#v1.2.0",
-    "m.normalize": "git+https://github.com/flkt-crnpio/m.normalize.git#v1.1.6"
+    "mol.core": "git+https://github.com/MolFramework/mol.core.git",
+    "mol.grid": "git+https://github.com/MolFramework/mol.grid.git",
+    "mol.normalize": "git+https://github.com/MolFramework/mol.normalize.git"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.3"
   }
 }
