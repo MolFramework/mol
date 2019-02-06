@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,600|Open+Sans:300,400,700');
 
+// normalize
 $m-background:  			#fff;
 $m-color:       			#222029;
 $m-primary:						#ff2d39;
@@ -20,7 +21,7 @@ $m-line-height:     	1.5em;
 $m-code-family: 			monospace;
 
 $m-h-family: 					'Montserrat', sans-serif;
-$m-h-size:   					20px;
+$m-h-size:   					13px;
 $m-h-height: 					1em;
 $m-h-spacing:					normal;
 $m-h-weight: 					600;
@@ -92,7 +93,7 @@ $m-switch-background-on:    $m-input-color-active;
 $m-switch-color-off:        $m-background;
 $m-switch-color-on:         $m-background;
 
-// Grid
+// grid
 $m-queries: // (name, query min-width, query max-width, container width, container min-width, container max-width)
     (xxs, 1rem, 29.999rem, 80%, inherit, inherit),
     (xs, 30rem, 47.999rem, 90%, inherit, inherit),
@@ -103,5 +104,5 @@ $m-queries: // (name, query min-width, query max-width, container width, contain
     (xxl, 120rem, 9999rem, 70%, inherit, inherit);
 
 $m-spacebase:         30px;
-$m-spacevariations:   10;
+$m-spacevariations:   15;
 $m-grid:              10;
