@@ -1,12 +1,12 @@
 # [mol](https://molframework.github.io/mol/)
 
- **Mol** es un framework modular de CSS cuyo objetivo principal es simplificar y economizar el tiempo de desarrollo y de carga de las hojas de estilos. En donde cada módulo pueda utilizarse solo o en conjunto manteniendo las caracteríasticas generales del estilo manipulables mediante archivos de variables (uno por modulo), evitando con esto la sobre-escritura de clases y reduciendo el esfuerzo para llegar al diseño final de cada proyecto.
+**Mol** es un framework modular de CSS cuyo objetivo principal es simplificar y economizar el tiempo de desarrollo y de carga de las hojas de estilos. En donde cada módulo pueda utilizarse solo o en conjunto manteniendo las caracteríasticas generales del estilo manipulables mediante archivos de variables (uno por modulo), evitando con esto la sobre-escritura de clases y reduciendo el esfuerzo para llegar al diseño final de cada proyecto.
 
- *Mol is a modular framework of CSS whose main objective is to simplify and save the time of development and loading of style sheets. Where each module can be used alone or together keeping the general characteristics of the style manipulated by variable files (one per module), avoiding overwriting classes and reducing the effort to reach the final design of each project.*
+*Mol is a modular framework of CSS whose main objective is to simplify and save the time of development and loading of style sheets. Where each module can be used alone or together keeping the general characteristics of the style manipulated by variable files (one per module), avoiding overwriting classes and reducing the effort to reach the final design of each project.*
 
- v1.0.0
+v1.0.0
 
- ( ﾟ▽ﾟ)/ Hi! [@MolFramework](https://twitter.com/MolFramework)
+( ﾟ▽ﾟ)/ Hi! [@MolFramework](https://twitter.com/MolFramework)
 
 
 #### Archivos
@@ -20,8 +20,8 @@ mol/
 │   ├── mol.css
 │   └── mol.css.map
 └── scss/
-   ├── _vars.scss
-   └── mol.scss
+├── _vars.scss
+└── mol.scss
 ```
 
 
@@ -74,24 +74,24 @@ $m-striped-even:            rgba($m-color, .1);
 $m-block-hover:             rgba($m-secondary, .1);
 
 $m-colors: // (nombre, color)
-  (primary, $m-primary),
-  (secondary, $m-secondary),
-  (accent, $m-accent),
-  (success, $m-success),
-  (warning, $m-warning),
-  (error, $m-error),
-  (info, $m-info),
-  (muted, $m-muted);
+(primary, $m-primary),
+(secondary, $m-secondary),
+(accent, $m-accent),
+(success, $m-success),
+(warning, $m-warning),
+(error, $m-error),
+(info, $m-info),
+(muted, $m-muted);
 
 $m-actn-colors: // (nombre, color, color-hover, color-fuente, color-fuente-hover, color-borde, color-borde-hover)
-  (primary, $m-actn-color, $m-actn-color-hover, $m-actn-font, $m-actn-font-hover, $m-actn-border-color, $m-actn-border-color-hover),
-  (secondary, $m-secondary, mix($m-secondary, $m-accent, 80%), $m-background, $m-background, $m-secondary, mix($m-secondary, $m-accent, 75%)),
-  (accent, $m-accent, mix($m-accent, $m-primary, 90%), $m-background, $m-background, $m-accent, mix($m-accent, $m-primary, 85%)),
-  (success, $m-success, mix($m-success, $m-primary, 90%), $m-background, $m-background, $m-success, mix($m-success, $m-primary, 85%)),
-  (warning, $m-warning, mix($m-warning, $m-primary, 85%), $m-background, $m-background, $m-warning, mix($m-warning, $m-primary, 80%)),
-  (error, $m-error, mix($m-error, $m-primary, 77%), $m-background, $m-background, $m-error, mix($m-error, $m-primary, 70%)),
-  (info, $m-info, mix($m-info, $m-primary, 90%), $m-background, $m-background, $m-info, mix($m-info, $m-primary, 85%)),
-  (muted, $m-muted, $m-muted, $m-color, $m-color, $m-muted, $m-muted);
+(primary, $m-actn-color, $m-actn-color-hover, $m-actn-font, $m-actn-font-hover, $m-actn-border-color, $m-actn-border-color-hover),
+(secondary, $m-secondary, mix($m-secondary, $m-accent, 80%), $m-background, $m-background, $m-secondary, mix($m-secondary, $m-accent, 75%)),
+(accent, $m-accent, mix($m-accent, $m-primary, 90%), $m-background, $m-background, $m-accent, mix($m-accent, $m-primary, 85%)),
+(success, $m-success, mix($m-success, $m-primary, 90%), $m-background, $m-background, $m-success, mix($m-success, $m-primary, 85%)),
+(warning, $m-warning, mix($m-warning, $m-primary, 85%), $m-background, $m-background, $m-warning, mix($m-warning, $m-primary, 80%)),
+(error, $m-error, mix($m-error, $m-primary, 77%), $m-background, $m-background, $m-error, mix($m-error, $m-primary, 70%)),
+(info, $m-info, mix($m-info, $m-primary, 90%), $m-background, $m-background, $m-info, mix($m-info, $m-primary, 85%)),
+(muted, $m-muted, $m-muted, $m-color, $m-color, $m-muted, $m-muted);
 
 $m-spacelement:             30px;
 
@@ -125,13 +125,13 @@ $m-switch-color-on:         $m-background;
 
 // grid
 $m-queries: // (name, query min-width, query max-width, container width, container min-width, container max-width)
-    (xxs, 1rem, 29.999rem, 80%, inherit, inherit),
-    (xs, 30rem, 47.999rem, 90%, inherit, inherit),
-    (sm, 48rem, 63.999rem, 90%, inherit, inherit),
-    (md, 64rem, 74.999rem, 90%, inherit, inherit),
-    (lg, 75rem, 89.999rem, 80%, inherit, inherit),
-    (xl, 90rem, 119.999rem, 75%, inherit, inherit),
-    (xxl, 120rem, 9999rem, 70%, inherit, inherit);
+(xxs, 1rem, 29.999rem, 80%, inherit, inherit),
+(xs, 30rem, 47.999rem, 90%, inherit, inherit),
+(sm, 48rem, 63.999rem, 90%, inherit, inherit),
+(md, 64rem, 74.999rem, 90%, inherit, inherit),
+(lg, 75rem, 89.999rem, 80%, inherit, inherit),
+(xl, 90rem, 119.999rem, 75%, inherit, inherit),
+(xxl, 120rem, 9999rem, 70%, inherit, inherit);
 
 $m-spacebase:         30px;
 $m-spacevariations:   10;
@@ -142,12 +142,12 @@ $m-grid:              10;
 
 ## Problemas conocidos
 
-- `[type="search"]`
+  - `[type="search"]`
 
 Σ(ﾟДﾟ；El input type search por el momento funciona como un input type text, para mantener el estilo general de los inputs, esperamos puedan agregar la funcionalidad con js.
 
-- `input[type="button"].link-underline`
-- `input[type="submit"].link-underline`
-- `input[type="reset"].link-underline`
+  - `input[type="button"].link-underline`
+  - `input[type="submit"].link-underline`
+  - `input[type="reset"].link-underline`
 
 Σ(ﾟДﾟ；El input type button, submit y reset con la clase link-underline no muestra la animación :hover de la línea bajo el texto debido a que el tag input no tiene ::after elements. Utiliza un botón normal `button.link-underline`.
