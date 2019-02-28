@@ -2,23 +2,56 @@
 <html lang="es" dir="ltr">
 	<head>
 		<meta charset="utf-8">
-		<meta name="robots" content="noindex,nofollow">
-	  <meta name="googlebot" content="noindex,nofollow">
+		<meta name="robots" content="index,follow">
+	  <meta name="googlebot" content="index,follow">
 	  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 		<link rel="stylesheet" href="mol.css">
 		<title>Mol</title>
 	</head>
 	<body>
 		<div class="main">
+
 			<div class="container-x">
-				<img class="m-t-4" src="mol.png" alt="MolFramework" width="125" height="119">
-				<h1 class="sub-title">Mol Framework</h1>
-				<p class="m-r-sm-10 m-r-md-15">Framework modular de CSS</p>
-				<hr>
-				<a href="#" class="link-underline m-r-2">NORMALIZE</a>
-				<a href="#" class="link-underline m-r-2">CORE</a>
-				<a href="#" class="link-underline">GRID</a>
+				<div class="page flex-col">
+					<div class="row-1 flex-col">
+						<div class="row-1"></div>
+						<div class="row-0">
+							<img src="mol.png" alt="MolFramework" width="125" height="119">
+							<h1 class="sub-title">Mol framework</h1>
+							<h4>Librería de estilos CSS modular</h4>
+						</div>
+					</div>
+					<div class="row-1">
+						<a href="#mol" class="link-r-underline m-r-1">mol</a> =
+						<a href="mol-normalize.html" class="link-r-underline m-x-1">normalize</a> +
+						<a href="mol-core.html" class="link-r-underline m-x-1">core</a> +
+						<a href="mol-grid.html" class="link-r-underline m-l-1">grid</a>
+					</div>
+				</div>
 			</div>
+
+			<div class="p-1">
+				<div class="flex-row x-end">
+					<div class="col-xxs-1_1 col-xs-3_5 col-sm-1_2 text-right">
+						<p>
+							Mol es una librería de CSS cuyo objetivo principal es,
+							además economizar el tiempo de desarrollo y de carga de las hojas de estilos,
+							agregar la habilidad de editar fácilmente las clases con archivos de variables
+							para evitar que todas las páginas parezcan ser la misma.
+						</p>
+						<p>
+							Cada módulo pueda utilizarse solo, o bien pueden cargarse todos los módulos desde un único archivo.
+							Las caracteríasticas generales del estilo son manipulables mediante archivos de variables en SCSS
+							esperando con ésto reducir el esfuerzo para llegar al diseño final de cada proyecto.
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div id="mol" class="">
+				<code>npm install --save-dev https://github.com/MolFramework/mol.git</code>
+			</div>
+
 		</div>
 	</body>
 </html>

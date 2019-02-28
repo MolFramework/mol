@@ -1,27 +1,27 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600|Open+Sans:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Open+Sans|PT+Serif');
 
-// normalize
 $m-background:  			#fff;
 $m-color:       			#222029;
-$m-primary:						#ff2d39;
-$m-secondary:   			#2a21a5;
-$m-accent:      			#2ed7d1;
+$m-primary:						#112;
+$m-secondary:   			#777;
+$m-accent:      			#00f;
 
 $m-actn-color: 			  $m-primary;
-$m-actn-color-hover:  mix($m-primary, $m-accent, 90%);
+$m-actn-color-hover:  mix($m-primary, $m-accent, 80%);
 $m-actn-font:         $m-background;
 $m-actn-font-hover:   $m-background;
 
-$m-font-family:     	'Open Sans', sans-serif;
-$m-font-size:       	15px;
+$m-font-serif: 				'PT Serif', serif;
+$m-font-family: 			'Open Sans', sans-serif;
+$m-font-size:       	16px;
 $m-font-weight:     	400;
 $m-letter-spacing:  	normal;
 $m-line-height:     	1.5em;
 
 $m-code-family: 			monospace;
 
-$m-h-family: 					'Montserrat', sans-serif;
-$m-h-size:   					13px;
+$m-h-family: 					'Josefin Sans', sans-serif;
+$m-h-size:   					23px;
 $m-h-height: 					1em;
 $m-h-spacing:					normal;
 $m-h-weight: 					600;
@@ -63,7 +63,7 @@ $m-actn-colors: // (nombre, color, color-hover, color-fuente, color-fuente-hover
   (info, $m-info, mix($m-info, $m-primary, 90%), $m-background, $m-background, $m-info, mix($m-info, $m-primary, 85%)),
   (muted, $m-muted, $m-muted, $m-color, $m-color, $m-muted, $m-muted);
 
-$m-spacelement:             30px;
+$m-spacelement:             20px;
 
 $m-shadow:                  0 0 0 0 rgba(0, 0, 0, 0);
 
@@ -103,6 +103,6 @@ $m-queries: // (name, query min-width, query max-width, container width, contain
     (xl, 90rem, 119.999rem, 75%, inherit, inherit),
     (xxl, 120rem, 9999rem, 70%, inherit, inherit);
 
-$m-spacebase:         30px;
+$m-spacebase:         40px;
 $m-spacevariations:   15;
 $m-grid:              10;

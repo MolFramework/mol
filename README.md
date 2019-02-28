@@ -142,12 +142,6 @@ $m-grid:              10;
 
 ## Problemas conocidos
 
-  - `[type="search"]`
+(//▽//) El input type search por el momento funciona como un input type text, para mantener el estilo general de los inputs, espero puedan agregar la funcionalidad con js.
 
-Σ(ﾟДﾟ；El input type search por el momento funciona como un input type text, para mantener el estilo general de los inputs, esperamos puedan agregar la funcionalidad con js.
-
-  - `input[type="button"].link-underline`
-  - `input[type="submit"].link-underline`
-  - `input[type="reset"].link-underline`
-
-Σ(ﾟДﾟ；El input type button, submit y reset con la clase link-underline no muestra la animación :hover de la línea bajo el texto debido a que el tag input no tiene ::after elements. Utiliza un botón normal `button.link-underline`.
+ヾ( ￣O￣)ツ Para el input type button, submit y reset no existe la clase `.link-underline` ni `.link-r-underline` porque la etiqueta de input no tiene ::after elements y es con lo que se anima la línea debado del texto en esas clases. Utiliza la etiqueta de botón si necesitas crear un botón que parezca link.
