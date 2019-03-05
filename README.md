@@ -65,7 +65,7 @@ $m-success:                 mix(#3c6, $m-primary, 90%);
 $m-warning:                 mix(#fc3, $m-primary, 90%);
 $m-error:                   mix(#a00, $m-primary, 90%);
 $m-info:                    mix(#0cf, $m-primary, 90%);
-$m-muted:                   mix(#eee, $m-color, 90%);
+$m-muted:                   mix(#eee, $m-primary, 90%);
 
 $m-actn-border-color:       $m-primary;
 $m-actn-border-color-hover: mix($m-primary, $m-accent, 95%);
@@ -73,17 +73,7 @@ $m-striped-odd:             rgba($m-color, .05);
 $m-striped-even:            rgba($m-color, .1);
 $m-block-hover:             rgba($m-secondary, .1);
 
-$m-colors: // (nombre, color)
-(primary, $m-primary),
-(secondary, $m-secondary),
-(accent, $m-accent),
-(success, $m-success),
-(warning, $m-warning),
-(error, $m-error),
-(info, $m-info),
-(muted, $m-muted);
-
-$m-actn-colors: // (nombre, color, color-hover, color-fuente, color-fuente-hover, color-borde, color-borde-hover)
+$m-array-colors: // (nombre, color, color-hover, color-fuente, color-fuente-hover, color-borde, color-borde-hover)
 (primary, $m-actn-color, $m-actn-color-hover, $m-actn-font, $m-actn-font-hover, $m-actn-border-color, $m-actn-border-color-hover),
 (secondary, $m-secondary, mix($m-secondary, $m-accent, 80%), $m-background, $m-background, $m-secondary, mix($m-secondary, $m-accent, 75%)),
 (accent, $m-accent, mix($m-accent, $m-primary, 90%), $m-background, $m-background, $m-accent, mix($m-accent, $m-primary, 85%)),
@@ -92,8 +82,6 @@ $m-actn-colors: // (nombre, color, color-hover, color-fuente, color-fuente-hover
 (error, $m-error, mix($m-error, $m-primary, 77%), $m-background, $m-background, $m-error, mix($m-error, $m-primary, 70%)),
 (info, $m-info, mix($m-info, $m-primary, 90%), $m-background, $m-background, $m-info, mix($m-info, $m-primary, 85%)),
 (muted, $m-muted, $m-muted, $m-color, $m-color, $m-muted, $m-muted);
-
-$m-spacelement:             30px;
 
 $m-shadow:                  0 0 0 0 rgba(0, 0, 0, 0);
 
@@ -123,7 +111,14 @@ $m-switch-background-on:    $m-input-color-active;
 $m-switch-color-off:        $m-background;
 $m-switch-color-on:         $m-background;
 
+// core and grid
+$m-spacelement:             20px;
+
 // grid
+$m-spacebase:         40px;
+$m-spacevariations:   10;
+$m-grid:              10;
+
 $m-queries: // (name, query min-width, query max-width, container width, container min-width, container max-width)
 (xxs, 1rem, 29.999rem, 80%, inherit, inherit),
 (xs, 30rem, 47.999rem, 90%, inherit, inherit),
@@ -132,10 +127,6 @@ $m-queries: // (name, query min-width, query max-width, container width, contain
 (lg, 75rem, 89.999rem, 80%, inherit, inherit),
 (xl, 90rem, 119.999rem, 75%, inherit, inherit),
 (xxl, 120rem, 9999rem, 70%, inherit, inherit);
-
-$m-spacebase:         30px;
-$m-spacevariations:   10;
-$m-grid:              10;
 
 ```
 
