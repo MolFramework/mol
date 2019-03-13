@@ -707,7 +707,7 @@ select {
 }
 
 fieldset {
-  border-width: 1px;
+  border-width: 2px;
   border-style: solid;
   border-color: rgba(34, 32, 41, 0.1);
   border-radius: 5px;
@@ -4012,7 +4012,7 @@ table {
 }
 table tbody tr,
 table tfoot tr {
-  border-top-width: 1px;
+  border-top-width: 2px;
   border-top-style: solid;
   border-top-color: rgba(34, 32, 41, 0.1);
 }
@@ -4058,7 +4058,7 @@ table tfoot tr td {
 }
 
 .table-box {
-  border-width: 1px;
+  border-width: 2px;
   border-style: solid;
   border-color: rgba(34, 32, 41, 0.1);
   box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
@@ -70661,6 +70661,550 @@ input[type=reset].btn-note:focus,
   .show-inline-flex-behind-xxl {
     display: inline-flex;
   }
+}
+.bg-primary {
+  background: #FA7062;
+}
+
+.bg-primary-light-1 {
+  background: #fee7e4;
+  color: #222029;
+}
+
+.bg-primary-dark-1 {
+  background: #da6459;
+  color: #fff;
+}
+
+.bg-primary-light-2 {
+  background: #fdceca;
+  color: #222029;
+}
+
+.bg-primary-dark-2 {
+  background: #b95851;
+  color: #fff;
+}
+
+.bg-primary-light-3 {
+  background: #fcb6af;
+  color: #222029;
+}
+
+.bg-primary-dark-3 {
+  background: #994c48;
+  color: #fff;
+}
+
+.bg-primary-light-4 {
+  background: #fc9e94;
+  color: #222029;
+}
+
+.bg-primary-dark-4 {
+  background: #784040;
+  color: #fff;
+}
+
+.bg-primary-light-5 {
+  background: #fb857a;
+  color: #222029;
+}
+
+.bg-primary-dark-5 {
+  background: #583437;
+  color: #fff;
+}
+
+.bg-secondary {
+  background: #FCA4B1;
+}
+
+.bg-secondary-light-1 {
+  background: #fef0f2;
+  color: #222029;
+}
+
+.bg-secondary-dark-1 {
+  background: #db909d;
+  color: #fff;
+}
+
+.bg-secondary-light-2 {
+  background: #fee0e4;
+  color: #222029;
+}
+
+.bg-secondary-dark-2 {
+  background: #bb7c88;
+  color: #fff;
+}
+
+.bg-secondary-light-3 {
+  background: #fdd1d7;
+  color: #222029;
+}
+
+.bg-secondary-dark-3 {
+  background: #9a6974;
+  color: #fff;
+}
+
+.bg-secondary-light-4 {
+  background: #fdc1ca;
+  color: #222029;
+}
+
+.bg-secondary-dark-4 {
+  background: #79555f;
+  color: #fff;
+}
+
+.bg-secondary-light-5 {
+  background: #fcb2bd;
+  color: #222029;
+}
+
+.bg-secondary-dark-5 {
+  background: #59414b;
+  color: #fff;
+}
+
+.bg-accent {
+  background: #16729A;
+}
+
+.bg-accent-light-1 {
+  background: #d7e7ee;
+  color: #222029;
+}
+
+.bg-accent-dark-1 {
+  background: #186689;
+  color: #fff;
+}
+
+.bg-accent-light-2 {
+  background: #b0cfdd;
+  color: #222029;
+}
+
+.bg-accent-dark-2 {
+  background: #1a5978;
+  color: #fff;
+}
+
+.bg-accent-light-3 {
+  background: #88b7cb;
+  color: #222029;
+}
+
+.bg-accent-dark-3 {
+  background: #1b4d67;
+  color: #fff;
+}
+
+.bg-accent-light-4 {
+  background: #619fba;
+  color: #222029;
+}
+
+.bg-accent-dark-4 {
+  background: #1d4156;
+  color: #fff;
+}
+
+.bg-accent-light-5 {
+  background: #3987a9;
+  color: #222029;
+}
+
+.bg-accent-dark-5 {
+  background: #1f3545;
+  color: #fff;
+}
+
+[class^=border] {
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgba(34, 32, 41, 0.07);
+}
+
+.border-top {
+  border-width: 0;
+  border-top-width: 2px;
+}
+
+.border-bottom {
+  border-width: 0;
+  border-bottom-width: 2px;
+}
+
+.border-right {
+  border-width: 0;
+  border-right-width: 2px;
+}
+
+.border-left {
+  border-width: 0;
+  border-left-width: 2px;
+}
+
+.border-primary {
+  border-color: #FA7062;
+}
+
+.border-primary-light-1 {
+  border-color: #fee4e1;
+}
+
+.border-primary-dark-1 {
+  border-color: #d56258;
+}
+
+.border-primary-light-2 {
+  border-color: #fdc9c3;
+}
+
+.border-primary-dark-2 {
+  border-color: #b1554f;
+}
+
+.border-primary-light-3 {
+  border-color: #fcada6;
+}
+
+.border-primary-dark-3 {
+  border-color: #8c4745;
+}
+
+.border-primary-light-4 {
+  border-color: #fb9288;
+}
+
+.border-primary-dark-4 {
+  border-color: #673a3b;
+}
+
+.border-primary-light-5 {
+  border-color: #fa776a;
+}
+
+.border-primary-dark-5 {
+  border-color: #422c32;
+}
+
+.border-secondary {
+  border-color: #FCA4B1;
+}
+
+.border-secondary-light-1 {
+  border-color: #feeef0;
+}
+
+.border-secondary-dark-1 {
+  border-color: #d78e9a;
+}
+
+.border-secondary-light-2 {
+  border-color: #fedce1;
+}
+
+.border-secondary-dark-2 {
+  border-color: #b27783;
+}
+
+.border-secondary-light-3 {
+  border-color: #fdcbd3;
+}
+
+.border-secondary-dark-3 {
+  border-color: #8d616c;
+}
+
+.border-secondary-light-4 {
+  border-color: #fdbac4;
+}
+
+.border-secondary-dark-4 {
+  border-color: #684a55;
+}
+
+.border-secondary-light-5 {
+  border-color: #fca9b5;
+}
+
+.border-secondary-dark-5 {
+  border-color: #43343d;
+}
+
+.border-accent {
+  border-color: #16729A;
+}
+
+.border-accent-light-1 {
+  border-color: #d3e4ec;
+}
+
+.border-accent-dark-1 {
+  border-color: #186487;
+}
+
+.border-accent-light-2 {
+  border-color: #a6c9d9;
+}
+
+.border-accent-dark-2 {
+  border-color: #1a5674;
+}
+
+.border-accent-light-3 {
+  border-color: #7aafc5;
+}
+
+.border-accent-dark-3 {
+  border-color: #1c4860;
+}
+
+.border-accent-light-4 {
+  border-color: #4e94b2;
+}
+
+.border-accent-dark-4 {
+  border-color: #1e3a4d;
+}
+
+.border-accent-light-5 {
+  border-color: #22799f;
+}
+
+.border-accent-dark-5 {
+  border-color: #202c3a;
+}
+
+[class^=line-] {
+  position: relative;
+}
+[class^=line-]::after {
+  background-color: rgba(34, 32, 41, 0.77);
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 20px;
+  z-index: -1;
+}
+
+[class^=line-t]::after {
+  top: -4px;
+  left: 0;
+}
+
+[class^=line-r]::after {
+  top: 45%;
+  right: -22px;
+}
+
+[class^=line-b]::after {
+  bottom: -4px;
+  left: 0;
+}
+
+[class^=line-l]::after {
+  top: 45%;
+  left: -22px;
+}
+
+.line-t-primary::after,
+.line-r-primary::after,
+.line-b-primary::after,
+.line-l-primary::after {
+  background-color: #FA7062;
+}
+
+.line-t-secondary::after,
+.line-r-secondary::after,
+.line-b-secondary::after,
+.line-l-secondary::after {
+  background-color: #FCA4B1;
+}
+
+.line-t-accent::after,
+.line-r-accent::after,
+.line-b-accent::after,
+.line-l-accent::after {
+  background-color: #16729A;
+}
+
+.text-primary {
+  color: #FA7062;
+}
+
+.foreground-primary {
+  position: relative;
+  color: #FA7062;
+}
+.foreground-primary:after {
+  content: "";
+  background: #fee7e4;
+  position: absolute;
+  bottom: 0.55em;
+  top: -0.1em;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.highlight-primary {
+  position: relative;
+}
+.highlight-primary:after {
+  content: "";
+  background: #FA7062;
+  position: absolute;
+  bottom: 0.55em;
+  top: -0.1em;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.text-secondary {
+  color: #FCA4B1;
+}
+
+.foreground-secondary {
+  position: relative;
+  color: #FCA4B1;
+}
+.foreground-secondary:after {
+  content: "";
+  background: #fef0f2;
+  position: absolute;
+  bottom: 0.55em;
+  top: -0.1em;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.highlight-secondary {
+  position: relative;
+}
+.highlight-secondary:after {
+  content: "";
+  background: #FCA4B1;
+  position: absolute;
+  bottom: 0.55em;
+  top: -0.1em;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.text-accent {
+  color: #16729A;
+}
+
+.foreground-accent {
+  position: relative;
+  color: #16729A;
+}
+.foreground-accent:after {
+  content: "";
+  background: #d7e7ee;
+  position: absolute;
+  bottom: 0.55em;
+  top: -0.1em;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.highlight-accent {
+  position: relative;
+}
+.highlight-accent:after {
+  content: "";
+  background: #16729A;
+  position: absolute;
+  bottom: 0.55em;
+  top: -0.1em;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.text-background {
+  color: #fff;
+}
+
+.foreground-background {
+  position: relative;
+  color: #fff;
+}
+.foreground-background:after {
+  content: "";
+  background: white;
+  position: absolute;
+  bottom: 0.55em;
+  top: -0.1em;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.highlight-background {
+  position: relative;
+}
+.highlight-background:after {
+  content: "";
+  background: #fff;
+  position: absolute;
+  bottom: 0.55em;
+  top: -0.1em;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.blend-multiply {
+  mix-blend-mode: multiply;
+}
+
+.bg-blend-multiply {
+  background-blend-mode: multiply;
+}
+
+.blend-screen {
+  mix-blend-mode: screen;
+}
+
+.bg-blend-screen {
+  background-blend-mode: screen;
+}
+
+.blend-lighten {
+  mix-blend-mode: lighten;
+}
+
+.bg-blend-lighten {
+  background-blend-mode: lighten;
+}
+
+.blend-difference {
+  mix-blend-mode: difference;
+}
+
+.bg-blend-difference {
+  background-blend-mode: difference;
+}
+
+.blend-burn {
+  mix-blend-mode: color-burn;
+}
+
+.bg-blend-burn {
+  background-blend-mode: color-burn;
 }
 
 /*# sourceMappingURL=mol.css.map */

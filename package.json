@@ -28,6 +28,7 @@
   },
   "homepage": "https://github.com/MolFramework/mol#readme",
   "dependencies": {
+    "mol.color": "git+https://github.com/MolFramework/mol.color.git",
     "mol.core": "git+https://github.com/MolFramework/mol.core.git",
     "mol.grid": "git+https://github.com/MolFramework/mol.grid.git",
     "mol.normalize": "git+https://github.com/MolFramework/mol.normalize.git"
