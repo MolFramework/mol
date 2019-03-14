@@ -24,7 +24,11 @@ output, summary, body {
 input[type=button],
 input[type=submit],
 input[type=reset],
-.btn,
+.btn, button.link-bg-up,
+.link-bg-up, button.link-line-up,
+.link-line-up, button.link-r-underline,
+.link-r-underline, button.link-underline,
+.link-underline,
 button.link,
 input[type=button].link,
 input[type=submit].link,
@@ -37,22 +41,34 @@ output, summary, a {
   cursor: pointer;
   touch-action: manipulation;
   -ms-touch-action: manipulation;
-  transition: all 0.3s cubic-bezier(0.465, 0.24, 0.37, 0.825);
+  transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
   text-rendering: optimizeLegibility;
 }
 .btn:active,
+.link-bg-up:active,
+.link-line-up:active,
+.link-r-underline:active,
+.link-underline:active,
 .link:active, button:active,
 input:active,
 textarea:active,
 select:active,
 output:active, summary:active, a:active,
 .btn:hover,
+.link-bg-up:hover,
+.link-line-up:hover,
+.link-r-underline:hover,
+.link-underline:hover,
 .link:hover, button:hover,
 input:hover,
 textarea:hover,
 select:hover,
 output:hover, summary:hover, a:hover,
 .btn:focus,
+.link-bg-up:focus,
+.link-line-up:focus,
+.link-r-underline:focus,
+.link-underline:focus,
 .link:focus, button:focus,
 input:focus,
 textarea:focus,
@@ -113,13 +129,18 @@ h6 {
 }
 
 a {
-  background-color: transparent;
-  color: #FA7062;
+  background-size: 100% 200%;
+  background-image: linear-gradient(0deg, #112 50%, transparent 50%);
+  background-position: 0 -1px;
+  color: #112;
   font-size: inherit;
   font-weight: normal;
+  text-decoration: none;
 }
 a.hover, a:active, a:hover, a:focus {
-  color: #cc706d;
+  color: #fff;
+  background-position: 0 -100%;
+  text-decoration: none;
 }
 
 article,
@@ -315,7 +336,7 @@ textarea:hover,
 select.hover,
 select:focus,
 select:hover {
-  border: 1px solid rgba(34, 32, 41, 0.9);
+  border: 1px solid rgba(34, 32, 41, 0.7);
 }
 
 output {
@@ -352,10 +373,12 @@ input[type=submit] {
   appearance: auto;
   -moz-appearance: button;
   -webkit-appearance: button;
-  background: #FA7062;
-  border: 1px solid #FA7062;
+  background-size: 200% 100%;
+  background-image: linear-gradient(90deg, #112 50%, transparent 50%);
+  background-position: 100% 0;
+  border: 1px solid #112;
   font-weight: normal;
-  color: #fff;
+  color: #112;
 }
 button.hover, button:focus, button:hover,
 input[type=button].hover,
@@ -367,8 +390,8 @@ input[type=reset]:hover,
 input[type=submit].hover,
 input[type=submit]:focus,
 input[type=submit]:hover {
-  background: #cc706d;
-  border: 1px solid #cc706d;
+  background-position: 0 0;
+  border: 1px solid #41414e;
   color: #fff;
 }
 
@@ -589,7 +612,7 @@ th, td {
 
 .font-hover {
   background: rgba(252, 164, 177, 0);
-  transition: all 0.3s cubic-bezier(0.465, 0.24, 0.37, 0.825);
+  transition: all 0.3s cubic-bezier(0.465, -0.24, 0.37, 1.125);
 }
 .font-hover.hover, .font-hover:hover {
   background: rgba(252, 164, 177, 0.1);
@@ -754,7 +777,7 @@ legend {
   position: absolute;
   left: 0;
   content: "";
-  transition: all 0.3s cubic-bezier(0.465, 0.24, 0.37, 0.825);
+  transition: all 0.3s cubic-bezier(0.465, -0.24, 0.37, 1.125);
 }
 .checkbox [type=checkbox] + label::after,
 .checkbox [type=radio] + label::after,
@@ -764,7 +787,7 @@ legend {
 .switch [type=radio] + label::after {
   position: absolute;
   content: "";
-  transition: all 0.3s cubic-bezier(0.465, 0.24, 0.37, 0.825);
+  transition: all 0.3s cubic-bezier(0.465, -0.24, 0.37, 1.125);
 }
 .checkbox [type=checkbox]:checked + label,
 .checkbox [type=radio]:checked + label,
@@ -1052,7 +1075,7 @@ select:-webkit-autofill {
 .form-primary textarea,
 .form-primary select {
   border-color: #FA7062;
-  color: #FA7062;
+  color: #112;
 }
 .form-primary [type=date].hover, .form-primary [type=date]:hover, .form-primary [type=date]:focus,
 .form-primary [type=datetime].hover,
@@ -1101,7 +1124,7 @@ select:-webkit-autofill {
 .form-primary select:hover,
 .form-primary select:focus {
   border-color: #ef7065;
-  color: #cc706d;
+  color: #41414e;
 }
 .form-primary [type=date]::-webkit-input-placeholder,
 .form-primary [type=datetime]::-webkit-input-placeholder,
@@ -1176,7 +1199,7 @@ select:-webkit-autofill {
   color: rgba(250, 112, 98, 0.5);
 }
 .form-primary label {
-  color: #FA7062;
+  color: #112;
 }
 .form-primary .checkbox [type=checkbox] + label,
 .form-primary .checkbox [type=radio] + label,
@@ -1184,7 +1207,7 @@ select:-webkit-autofill {
 .form-primary .radio [type=radio] + label,
 .form-primary .switch [type=checkbox] + label,
 .form-primary .switch [type=radio] + label {
-  color: #FA7062;
+  color: #112;
 }
 .form-primary .checkbox [type=checkbox] + label::before,
 .form-primary .checkbox [type=radio] + label::before,
@@ -1200,7 +1223,7 @@ select:-webkit-autofill {
 .form-primary .radio [type=radio]:checked + label,
 .form-primary .switch [type=checkbox]:checked + label,
 .form-primary .switch [type=radio]:checked + label {
-  color: #cc706d;
+  color: #41414e;
 }
 .form-primary .checkbox [type=checkbox]:checked + label::before,
 .form-primary .checkbox [type=radio]:checked + label::before,
@@ -1208,12 +1231,12 @@ select:-webkit-autofill {
 .form-primary .radio [type=radio]:checked + label::before,
 .form-primary .switch [type=checkbox]:checked + label::before,
 .form-primary .switch [type=radio]:checked + label::before {
-  background: #FA7062;
-  border-color: #FA7062;
+  background: #112;
+  border-color: #112;
 }
 
 .label-primary {
-  color: #FA7062;
+  color: #112;
 }
 
 [type=date].input-primary,
@@ -1233,7 +1256,7 @@ select:-webkit-autofill {
 .textarea-primary,
 .select-primary {
   border-color: #FA7062;
-  color: #FA7062;
+  color: #112;
 }
 [type=date].input-primary.hover, [type=date].input-primary:hover, [type=date].input-primary:focus,
 [type=datetime].input-primary.hover,
@@ -1282,7 +1305,7 @@ select:-webkit-autofill {
 .select-primary:hover,
 .select-primary:focus {
   border-color: #ef7065;
-  color: #cc706d;
+  color: #41414e;
 }
 [type=date].input-primary::-webkit-input-placeholder,
 [type=datetime].input-primary::-webkit-input-placeholder,
@@ -1363,7 +1386,7 @@ select:-webkit-autofill {
 .radio-primary [type=radio] + label,
 .switch-primary [type=checkbox] + label,
 .switch-primary [type=radio] + label {
-  color: #FA7062;
+  color: #112;
 }
 .checkbox-primary [type=checkbox] + label::before,
 .checkbox-primary [type=radio] + label::before,
@@ -1379,7 +1402,7 @@ select:-webkit-autofill {
 .radio-primary [type=radio]:checked + label,
 .switch-primary [type=checkbox]:checked + label,
 .switch-primary [type=radio]:checked + label {
-  color: #cc706d;
+  color: #41414e;
 }
 .checkbox-primary [type=checkbox]:checked + label::before,
 .checkbox-primary [type=radio]:checked + label::before,
@@ -1387,8 +1410,8 @@ select:-webkit-autofill {
 .radio-primary [type=radio]:checked + label::before,
 .switch-primary [type=checkbox]:checked + label::before,
 .switch-primary [type=radio]:checked + label::before {
-  background: #cc706d;
-  border-color: #cc706d;
+  background: #41414e;
+  border-color: #41414e;
 }
 
 .form-secondary [type=date],
@@ -3603,7 +3626,9 @@ select:-webkit-autofill {
   object-fit: contain;
 }
 
-button.link-r-underline,
+button.link-bg-up,
+.link-bg-up, button.link-line-up,
+.link-line-up, button.link-r-underline,
 .link-r-underline, button.link-underline,
 .link-underline, a,
 button.link,
@@ -3614,16 +3639,24 @@ input[type=reset].link,
   background-color: transparent;
   border: none;
   box-shadow: none;
-  color: #FA7062;
+  color: #112;
   cursor: pointer;
   font-size: inherit;
   font-weight: normal;
   margin: 0;
   padding: 0;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
-button.link-r-underline.hover, button.link-r-underline:hover, button.link-r-underline:active, button.link-r-underline:focus,
+button.link-bg-up.hover, button.link-bg-up:hover, button.link-bg-up:active, button.link-bg-up:focus,
+.link-bg-up.hover,
+.link-bg-up:hover,
+.link-bg-up:active,
+.link-bg-up:focus, button.link-line-up.hover, button.link-line-up:hover, button.link-line-up:active, button.link-line-up:focus,
+.link-line-up.hover,
+.link-line-up:hover,
+.link-line-up:active,
+.link-line-up:focus, button.link-r-underline.hover, button.link-r-underline:hover, button.link-r-underline:active, button.link-r-underline:focus,
 .link-r-underline.hover,
 .link-r-underline:hover,
 .link-r-underline:active,
@@ -3651,18 +3684,19 @@ input[type=reset].link:focus,
   background-color: transparent;
   border: none;
   box-shadow: none;
-  color: #cc706d;
-  text-decoration: none;
+  color: #41414e;
+  text-decoration: underline;
 }
 
 button.link-underline,
 .link-underline {
   position: relative;
+  text-decoration: none;
 }
 button.link-underline::after,
 .link-underline::after {
-  background: #FA7062;
-  transition: all 0.3s cubic-bezier(0.465, 0.24, 0.37, 0.825);
+  background: #112;
+  transition: all 0.3s cubic-bezier(0.465, -0.24, 0.37, 1.125);
   height: 1px;
   content: "";
   position: absolute;
@@ -3676,24 +3710,26 @@ button.link-underline.hover, button.link-underline:hover, button.link-underline:
 .link-underline:active,
 .link-underline:focus {
   position: relative;
+  text-decoration: none;
 }
 button.link-underline.hover::after, button.link-underline:hover::after, button.link-underline:active::after, button.link-underline:focus::after,
 .link-underline.hover::after,
 .link-underline:hover::after,
 .link-underline:active::after,
 .link-underline:focus::after {
-  background: #cc706d;
+  background: #41414e;
   width: 100%;
 }
 
 button.link-r-underline,
 .link-r-underline {
   position: relative;
+  text-decoration: none;
 }
 button.link-r-underline::after,
 .link-r-underline::after {
-  background: #FA7062;
-  transition: all 0.3s cubic-bezier(0.465, 0.24, 0.37, 0.825);
+  background: #112;
+  transition: all 0.3s cubic-bezier(0.465, -0.24, 0.37, 1.125);
   height: 1px;
   content: "";
   position: absolute;
@@ -3707,14 +3743,86 @@ button.link-r-underline.hover, button.link-r-underline:hover, button.link-r-unde
 .link-r-underline:active,
 .link-r-underline:focus {
   position: relative;
+  text-decoration: none;
 }
 button.link-r-underline.hover::after, button.link-r-underline:hover::after, button.link-r-underline:active::after, button.link-r-underline:focus::after,
 .link-r-underline.hover::after,
 .link-r-underline:hover::after,
 .link-r-underline:active::after,
 .link-r-underline:focus::after {
-  background: #cc706d;
+  background: #41414e;
   width: 8px;
+}
+
+button.link-line-up,
+.link-line-up {
+  position: relative;
+  text-decoration: none;
+}
+button.link-line-up::after,
+.link-line-up::after {
+  background: #112;
+  transition: all 0.3s cubic-bezier(0.465, -0.24, 0.37, 1.125);
+  height: 1px;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 8px;
+  width: 8px;
+  z-index: -1;
+}
+button.link-line-up.hover, button.link-line-up:hover, button.link-line-up:active, button.link-line-up:focus,
+.link-line-up.hover,
+.link-line-up:hover,
+.link-line-up:active,
+.link-line-up:focus {
+  color: #222029;
+  position: relative;
+  text-decoration: none;
+}
+button.link-line-up.hover::after, button.link-line-up:hover::after, button.link-line-up:active::after, button.link-line-up:focus::after,
+.link-line-up.hover::after,
+.link-line-up:hover::after,
+.link-line-up:active::after,
+.link-line-up:focus::after {
+  background: #112;
+  height: 16px;
+  width: 100%;
+}
+
+button.link-bg-up,
+.link-bg-up {
+  position: relative;
+  text-decoration: none;
+}
+button.link-bg-up::after,
+.link-bg-up::after {
+  background: #112;
+  transition: all 0.3s cubic-bezier(0.465, -0.24, 0.37, 1.125);
+  height: 1px;
+  content: "";
+  position: absolute;
+  bottom: -0.15em;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+button.link-bg-up.hover, button.link-bg-up:hover, button.link-bg-up:active, button.link-bg-up:focus,
+.link-bg-up.hover,
+.link-bg-up:hover,
+.link-bg-up:active,
+.link-bg-up:focus {
+  color: #fff;
+  position: relative;
+  text-decoration: none;
+}
+button.link-bg-up.hover::after, button.link-bg-up:hover::after, button.link-bg-up:active::after, button.link-bg-up:focus::after,
+.link-bg-up.hover::after,
+.link-bg-up:hover::after,
+.link-bg-up:active::after,
+.link-bg-up:focus::after {
+  background: #112;
+  height: 1.65em;
 }
 
 button.link-primary,
@@ -3722,7 +3830,7 @@ input[type=button].link-primary,
 input[type=submit].link-primary,
 input[type=reset].link-primary,
 .link-primary {
-  color: #FA7062;
+  color: #112;
 }
 button.link-primary.hover, button.link-primary:hover, button.link-primary:active, button.link-primary:focus,
 input[type=button].link-primary.hover,
@@ -3741,14 +3849,35 @@ input[type=reset].link-primary:focus,
 .link-primary:hover,
 .link-primary:active,
 .link-primary:focus {
-  color: #cc706d;
+  color: #41414e;
 }
 
+button.link-underline.link-primary,
+.link-underline.link-primary,
+button.link-r-underline.link-primary,
+.link-r-underline.link-primary {
+  color: #112;
+}
 button.link-underline.link-primary::after,
 .link-underline.link-primary::after,
 button.link-r-underline.link-primary::after,
 .link-r-underline.link-primary::after {
-  background: #FA7062;
+  background: #112;
+}
+button.link-underline.link-primary.hover, button.link-underline.link-primary:hover, button.link-underline.link-primary:active, button.link-underline.link-primary:focus,
+.link-underline.link-primary.hover,
+.link-underline.link-primary:hover,
+.link-underline.link-primary:active,
+.link-underline.link-primary:focus,
+button.link-r-underline.link-primary.hover,
+button.link-r-underline.link-primary:hover,
+button.link-r-underline.link-primary:active,
+button.link-r-underline.link-primary:focus,
+.link-r-underline.link-primary.hover,
+.link-r-underline.link-primary:hover,
+.link-r-underline.link-primary:active,
+.link-r-underline.link-primary:focus {
+  color: #41414e;
 }
 button.link-underline.link-primary.hover::after, button.link-underline.link-primary:hover::after, button.link-underline.link-primary:active::after, button.link-underline.link-primary:focus::after,
 .link-underline.link-primary.hover::after,
@@ -3763,7 +3892,53 @@ button.link-r-underline.link-primary:focus::after,
 .link-r-underline.link-primary:hover::after,
 .link-r-underline.link-primary:active::after,
 .link-r-underline.link-primary:focus::after {
-  background: #cc706d;
+  background: #41414e;
+}
+
+button.link-line-up.link-primary,
+.link-line-up.link-primary {
+  color: #112;
+}
+button.link-line-up.link-primary::after,
+.link-line-up.link-primary::after {
+  background: #112;
+}
+button.link-line-up.link-primary.hover, button.link-line-up.link-primary:hover, button.link-line-up.link-primary:active, button.link-line-up.link-primary:focus,
+.link-line-up.link-primary.hover,
+.link-line-up.link-primary:hover,
+.link-line-up.link-primary:active,
+.link-line-up.link-primary:focus {
+  color: #222029;
+}
+button.link-line-up.link-primary.hover::after, button.link-line-up.link-primary:hover::after, button.link-line-up.link-primary:active::after, button.link-line-up.link-primary:focus::after,
+.link-line-up.link-primary.hover::after,
+.link-line-up.link-primary:hover::after,
+.link-line-up.link-primary:active::after,
+.link-line-up.link-primary:focus::after {
+  background: #112;
+}
+
+button.link-bg-up.link-primary,
+.link-bg-up.link-primary {
+  color: #112;
+}
+button.link-bg-up.link-primary::after,
+.link-bg-up.link-primary::after {
+  background: #112;
+}
+button.link-bg-up.link-primary.hover, button.link-bg-up.link-primary:hover, button.link-bg-up.link-primary:active, button.link-bg-up.link-primary:focus,
+.link-bg-up.link-primary.hover,
+.link-bg-up.link-primary:hover,
+.link-bg-up.link-primary:active,
+.link-bg-up.link-primary:focus {
+  color: #fff;
+}
+button.link-bg-up.link-primary.hover::after, button.link-bg-up.link-primary:hover::after, button.link-bg-up.link-primary:active::after, button.link-bg-up.link-primary:focus::after,
+.link-bg-up.link-primary.hover::after,
+.link-bg-up.link-primary:hover::after,
+.link-bg-up.link-primary:active::after,
+.link-bg-up.link-primary:focus::after {
+  background: #112;
 }
 
 button.link-secondary,
@@ -3793,11 +3968,32 @@ input[type=reset].link-secondary:focus,
   color: #ce9aac;
 }
 
+button.link-underline.link-secondary,
+.link-underline.link-secondary,
+button.link-r-underline.link-secondary,
+.link-r-underline.link-secondary {
+  color: #FCA4B1;
+}
 button.link-underline.link-secondary::after,
 .link-underline.link-secondary::after,
 button.link-r-underline.link-secondary::after,
 .link-r-underline.link-secondary::after {
   background: #FCA4B1;
+}
+button.link-underline.link-secondary.hover, button.link-underline.link-secondary:hover, button.link-underline.link-secondary:active, button.link-underline.link-secondary:focus,
+.link-underline.link-secondary.hover,
+.link-underline.link-secondary:hover,
+.link-underline.link-secondary:active,
+.link-underline.link-secondary:focus,
+button.link-r-underline.link-secondary.hover,
+button.link-r-underline.link-secondary:hover,
+button.link-r-underline.link-secondary:active,
+button.link-r-underline.link-secondary:focus,
+.link-r-underline.link-secondary.hover,
+.link-r-underline.link-secondary:hover,
+.link-r-underline.link-secondary:active,
+.link-r-underline.link-secondary:focus {
+  color: #ce9aac;
 }
 button.link-underline.link-secondary.hover::after, button.link-underline.link-secondary:hover::after, button.link-underline.link-secondary:active::after, button.link-underline.link-secondary:focus::after,
 .link-underline.link-secondary.hover::after,
@@ -3813,6 +4009,52 @@ button.link-r-underline.link-secondary:focus::after,
 .link-r-underline.link-secondary:active::after,
 .link-r-underline.link-secondary:focus::after {
   background: #ce9aac;
+}
+
+button.link-line-up.link-secondary,
+.link-line-up.link-secondary {
+  color: #FCA4B1;
+}
+button.link-line-up.link-secondary::after,
+.link-line-up.link-secondary::after {
+  background: #FCA4B1;
+}
+button.link-line-up.link-secondary.hover, button.link-line-up.link-secondary:hover, button.link-line-up.link-secondary:active, button.link-line-up.link-secondary:focus,
+.link-line-up.link-secondary.hover,
+.link-line-up.link-secondary:hover,
+.link-line-up.link-secondary:active,
+.link-line-up.link-secondary:focus {
+  color: #222029;
+}
+button.link-line-up.link-secondary.hover::after, button.link-line-up.link-secondary:hover::after, button.link-line-up.link-secondary:active::after, button.link-line-up.link-secondary:focus::after,
+.link-line-up.link-secondary.hover::after,
+.link-line-up.link-secondary:hover::after,
+.link-line-up.link-secondary:active::after,
+.link-line-up.link-secondary:focus::after {
+  background: #FCA4B1;
+}
+
+button.link-bg-up.link-secondary,
+.link-bg-up.link-secondary {
+  color: #FCA4B1;
+}
+button.link-bg-up.link-secondary::after,
+.link-bg-up.link-secondary::after {
+  background: #FCA4B1;
+}
+button.link-bg-up.link-secondary.hover, button.link-bg-up.link-secondary:hover, button.link-bg-up.link-secondary:active, button.link-bg-up.link-secondary:focus,
+.link-bg-up.link-secondary.hover,
+.link-bg-up.link-secondary:hover,
+.link-bg-up.link-secondary:active,
+.link-bg-up.link-secondary:focus {
+  color: #fff;
+}
+button.link-bg-up.link-secondary.hover::after, button.link-bg-up.link-secondary:hover::after, button.link-bg-up.link-secondary:active::after, button.link-bg-up.link-secondary:focus::after,
+.link-bg-up.link-secondary.hover::after,
+.link-bg-up.link-secondary:hover::after,
+.link-bg-up.link-secondary:active::after,
+.link-bg-up.link-secondary:focus::after {
+  background: #FCA4B1;
 }
 
 button.link-accent,
@@ -3842,11 +4084,32 @@ input[type=reset].link-accent:focus,
   color: #2d7294;
 }
 
+button.link-underline.link-accent,
+.link-underline.link-accent,
+button.link-r-underline.link-accent,
+.link-r-underline.link-accent {
+  color: #16729A;
+}
 button.link-underline.link-accent::after,
 .link-underline.link-accent::after,
 button.link-r-underline.link-accent::after,
 .link-r-underline.link-accent::after {
   background: #16729A;
+}
+button.link-underline.link-accent.hover, button.link-underline.link-accent:hover, button.link-underline.link-accent:active, button.link-underline.link-accent:focus,
+.link-underline.link-accent.hover,
+.link-underline.link-accent:hover,
+.link-underline.link-accent:active,
+.link-underline.link-accent:focus,
+button.link-r-underline.link-accent.hover,
+button.link-r-underline.link-accent:hover,
+button.link-r-underline.link-accent:active,
+button.link-r-underline.link-accent:focus,
+.link-r-underline.link-accent.hover,
+.link-r-underline.link-accent:hover,
+.link-r-underline.link-accent:active,
+.link-r-underline.link-accent:focus {
+  color: #2d7294;
 }
 button.link-underline.link-accent.hover::after, button.link-underline.link-accent:hover::after, button.link-underline.link-accent:active::after, button.link-underline.link-accent:focus::after,
 .link-underline.link-accent.hover::after,
@@ -3862,6 +4125,52 @@ button.link-r-underline.link-accent:focus::after,
 .link-r-underline.link-accent:active::after,
 .link-r-underline.link-accent:focus::after {
   background: #2d7294;
+}
+
+button.link-line-up.link-accent,
+.link-line-up.link-accent {
+  color: #16729A;
+}
+button.link-line-up.link-accent::after,
+.link-line-up.link-accent::after {
+  background: #16729A;
+}
+button.link-line-up.link-accent.hover, button.link-line-up.link-accent:hover, button.link-line-up.link-accent:active, button.link-line-up.link-accent:focus,
+.link-line-up.link-accent.hover,
+.link-line-up.link-accent:hover,
+.link-line-up.link-accent:active,
+.link-line-up.link-accent:focus {
+  color: #222029;
+}
+button.link-line-up.link-accent.hover::after, button.link-line-up.link-accent:hover::after, button.link-line-up.link-accent:active::after, button.link-line-up.link-accent:focus::after,
+.link-line-up.link-accent.hover::after,
+.link-line-up.link-accent:hover::after,
+.link-line-up.link-accent:active::after,
+.link-line-up.link-accent:focus::after {
+  background: #16729A;
+}
+
+button.link-bg-up.link-accent,
+.link-bg-up.link-accent {
+  color: #16729A;
+}
+button.link-bg-up.link-accent::after,
+.link-bg-up.link-accent::after {
+  background: #16729A;
+}
+button.link-bg-up.link-accent.hover, button.link-bg-up.link-accent:hover, button.link-bg-up.link-accent:active, button.link-bg-up.link-accent:focus,
+.link-bg-up.link-accent.hover,
+.link-bg-up.link-accent:hover,
+.link-bg-up.link-accent:active,
+.link-bg-up.link-accent:focus {
+  color: #fff;
+}
+button.link-bg-up.link-accent.hover::after, button.link-bg-up.link-accent:hover::after, button.link-bg-up.link-accent:active::after, button.link-bg-up.link-accent:focus::after,
+.link-bg-up.link-accent.hover::after,
+.link-bg-up.link-accent:hover::after,
+.link-bg-up.link-accent:active::after,
+.link-bg-up.link-accent:focus::after {
+  background: #16729A;
 }
 
 button.link-note,
@@ -3891,11 +4200,32 @@ input[type=reset].link-note:focus,
   color: #9b8987;
 }
 
+button.link-underline.link-note,
+.link-underline.link-note,
+button.link-r-underline.link-note,
+.link-r-underline.link-note {
+  color: #b2a4a3;
+}
 button.link-underline.link-note::after,
 .link-underline.link-note::after,
 button.link-r-underline.link-note::after,
 .link-r-underline.link-note::after {
   background: #b2a4a3;
+}
+button.link-underline.link-note.hover, button.link-underline.link-note:hover, button.link-underline.link-note:active, button.link-underline.link-note:focus,
+.link-underline.link-note.hover,
+.link-underline.link-note:hover,
+.link-underline.link-note:active,
+.link-underline.link-note:focus,
+button.link-r-underline.link-note.hover,
+button.link-r-underline.link-note:hover,
+button.link-r-underline.link-note:active,
+button.link-r-underline.link-note:focus,
+.link-r-underline.link-note.hover,
+.link-r-underline.link-note:hover,
+.link-r-underline.link-note:active,
+.link-r-underline.link-note:focus {
+  color: #9b8987;
 }
 button.link-underline.link-note.hover::after, button.link-underline.link-note:hover::after, button.link-underline.link-note:active::after, button.link-underline.link-note:focus::after,
 .link-underline.link-note.hover::after,
@@ -3911,6 +4241,52 @@ button.link-r-underline.link-note:focus::after,
 .link-r-underline.link-note:active::after,
 .link-r-underline.link-note:focus::after {
   background: #9b8987;
+}
+
+button.link-line-up.link-note,
+.link-line-up.link-note {
+  color: #b2a4a3;
+}
+button.link-line-up.link-note::after,
+.link-line-up.link-note::after {
+  background: #b2a4a3;
+}
+button.link-line-up.link-note.hover, button.link-line-up.link-note:hover, button.link-line-up.link-note:active, button.link-line-up.link-note:focus,
+.link-line-up.link-note.hover,
+.link-line-up.link-note:hover,
+.link-line-up.link-note:active,
+.link-line-up.link-note:focus {
+  color: #222029;
+}
+button.link-line-up.link-note.hover::after, button.link-line-up.link-note:hover::after, button.link-line-up.link-note:active::after, button.link-line-up.link-note:focus::after,
+.link-line-up.link-note.hover::after,
+.link-line-up.link-note:hover::after,
+.link-line-up.link-note:active::after,
+.link-line-up.link-note:focus::after {
+  background: #b2a4a3;
+}
+
+button.link-bg-up.link-note,
+.link-bg-up.link-note {
+  color: #b2a4a3;
+}
+button.link-bg-up.link-note::after,
+.link-bg-up.link-note::after {
+  background: #b2a4a3;
+}
+button.link-bg-up.link-note.hover, button.link-bg-up.link-note:hover, button.link-bg-up.link-note:active, button.link-bg-up.link-note:focus,
+.link-bg-up.link-note.hover,
+.link-bg-up.link-note:hover,
+.link-bg-up.link-note:active,
+.link-bg-up.link-note:focus {
+  color: #fff;
+}
+button.link-bg-up.link-note.hover::after, button.link-bg-up.link-note:hover::after, button.link-bg-up.link-note:active::after, button.link-bg-up.link-note:focus::after,
+.link-bg-up.link-note.hover::after,
+.link-bg-up.link-note:hover::after,
+.link-bg-up.link-note:active::after,
+.link-bg-up.link-note:focus::after {
+  background: #b2a4a3;
 }
 
 ul,
@@ -3950,7 +4326,7 @@ dl dd {
 
 .list-hover li {
   background: rgba(252, 164, 177, 0);
-  transition: all 0.3s cubic-bezier(0.465, 0.24, 0.37, 0.825);
+  transition: all 0.3s cubic-bezier(0.465, -0.24, 0.37, 1.125);
 }
 .list-hover li.hover, .list-hover li:hover {
   background: rgba(252, 164, 177, 0.1);
@@ -4051,7 +4427,7 @@ table tfoot tr td {
 
 .table-hover tbody tr {
   background: rgba(252, 164, 177, 0);
-  transition: all 0.3s cubic-bezier(0.465, 0.24, 0.37, 0.825);
+  transition: all 0.3s cubic-bezier(0.465, -0.24, 0.37, 1.125);
 }
 .table-hover tbody tr.hover, .table-hover tbody tr:hover {
   background: rgba(252, 164, 177, 0.1);
@@ -4069,11 +4445,11 @@ input[type=button],
 input[type=submit],
 input[type=reset],
 .btn {
-  background: #FA7062;
+  background: #112;
   border: 1px solid #FA7062;
   border-radius: 40px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0), 0 1px 2px rgba(0, 0, 0, 0);
-  color: #fff;
+  color: #112;
   padding: 7px 10.5px;
   text-decoration: none;
 }
@@ -4091,7 +4467,7 @@ input[type=reset]:hover,
 .btn:focus,
 .btn:hover {
   text-decoration: none;
-  background: #cc706d;
+  background: #41414e;
   border: 1px solid #ef7065;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.05), 0 5px 5px rgba(0, 0, 0, 0.1);
   color: #fff;
@@ -4174,9 +4550,9 @@ input[type=button].btn-primary,
 input[type=submit].btn-primary,
 input[type=reset].btn-primary,
 .btn-primary {
-  background: #FA7062;
+  background: #112;
   border-color: #FA7062;
-  color: #fff;
+  color: #112;
 }
 button.btn-primary.hover, button.btn-primary:hover, button.btn-primary:focus,
 input[type=button].btn-primary.hover,
@@ -4191,7 +4567,7 @@ input[type=reset].btn-primary:focus,
 .btn-primary.hover,
 .btn-primary:hover,
 .btn-primary:focus {
-  background: #cc706d;
+  background: #41414e;
   border-color: #ef7065;
   color: #fff;
 }

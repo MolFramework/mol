@@ -181,6 +181,6 @@ $m-queries:
 
 (//▽//) El input type search por el momento funciona como un input type text, para mantener el estilo general de los inputs, espero puedan agregar la funcionalidad con js.
 
-ヾ( ￣O￣)ツ Para el input type button, submit y reset no existe la clase `.link-underline` ni `.link-r-underline` porque la etiqueta de input no tiene ::after elements y es con lo que se anima la línea debado del texto en esas clases. Utiliza la etiqueta de botón si necesitas crear un botón que parezca link.
+ヾ( ￣O￣)ツ Las clases de link no funcionarán para elementos que no puedan tener el pseudo-element ::after
 
 Σ(T□T) el blend mode para las clases de las imágenes no funciona en todos los navegadores [caniuse](https://caniuse.com/#feat=css-backgroundblendmode)
