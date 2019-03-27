@@ -28,7 +28,7 @@
   },
   "homepage": "https://github.com/mol-project/mol#readme",
   "dependencies": {
-    "mol.color": "git+https://github.com/mol-project/mol.color.git#v.1.0.0",
+    "mol.color": "git+https://github.com/mol-project/mol.color.git#v.1.1.0",
     "mol.core": "git+https://github.com/mol-project/mol.core.git#v.3.0.0",
     "mol.grid": "git+https://github.com/mol-project/mol.grid.git#v.2.0.0",
     "mol.normalize": "git+https://github.com/mol-project/mol.normalize.git#v.2.0.1"
