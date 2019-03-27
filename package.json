@@ -1,7 +1,7 @@
 {
   "name": "mol",
   "version": "1.0.0",
-  "description": "Modular framework of CSS whose main objective is to simplify and save the time of development and loading of style sheets",
+  "description": "Modular CSS Library",
   "scripts": {
     "dist": "sass scss/mol.scss:dist/mol.min.css --style compressed",
     "docs": "npm run scss | npm run start",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MolFramework/mol.git"
+    "url": "git+https://github.com/mol-project/mol.git"
   },
   "keywords": [
     "mol",
@@ -24,14 +24,14 @@
   "author": "flkt <flkt.crnpio@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/MolFramework/mol/issues"
+    "url": "https://github.com/mol-project/mol/issues"
   },
-  "homepage": "https://github.com/MolFramework/mol#readme",
+  "homepage": "https://github.com/mol-project/mol#readme",
   "dependencies": {
-    "mol.color": "git+https://github.com/MolFramework/mol.color.git",
-    "mol.core": "git+https://github.com/MolFramework/mol.core.git",
-    "mol.grid": "git+https://github.com/MolFramework/mol.grid.git",
-    "mol.normalize": "git+https://github.com/MolFramework/mol.normalize.git"
+    "mol.color": "git+https://github.com/mol-project/mol.color.git#v.1.0.0",
+    "mol.core": "git+https://github.com/mol-project/mol.core.git#v.3.0.0",
+    "mol.grid": "git+https://github.com/mol-project/mol.grid.git#v.2.0.0",
+    "mol.normalize": "git+https://github.com/mol-project/mol.normalize.git#v.2.0.1"
   },
   "devDependencies": {
     "browser-sync": "^2.26.3"
