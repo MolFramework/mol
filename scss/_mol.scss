@@ -7,7 +7,39 @@
 
 @import "_vars";
 
+// normalize
 @import "../node_modules/mol.normalize/scss/_normalize.scss";
+
+// core
 @import "../node_modules/mol.core/scss/_core.scss";
+	// archivos del core
+	// @import "../node_modules/mol.core/scss/_typography.scss";
+	// @import "../node_modules/mol.core/scss/_form.scss";
+	// @import "../node_modules/mol.core/scss/_heading.scss";
+	// @import "../node_modules/mol.core/scss/_image.scss";
+	// @import "../node_modules/mol.core/scss/_link.scss";
+	// @import "../node_modules/mol.core/scss/_list.scss";
+	// @import "../node_modules/mol.core/scss/_table.scss";
+	// @import "../node_modules/mol.core/scss/_button.scss";
+
+// grid
 @import "../node_modules/mol.grid/scss/_grid.scss";
+	// archivos del grid
+	// @import "../node_modules/mol.grid/scss/_containers.scss";
+	// @import "../node_modules/mol.grid/scss/_flex.scss";
+	// @import "../node_modules/mol.grid/scss/_cols.scss";
+	// @import "../node_modules/mol.grid/scss/_rows.scss";
+	// @import "../node_modules/mol.grid/scss/_margins.scss";
+	// @import "../node_modules/mol.grid/scss/_paddings.scss";
+	// @import "../node_modules/mol.grid/scss/_spacing.scss";
+	// @import "../node_modules/mol.grid/scss/_display.scss";
+
+// color
 @import "../node_modules/mol.color/scss/_color.scss";
+	// archivos de color
+	// @import "../node_modules/mol.color/scss/_background.scss";
+	// @import "../node_modules/mol.color/scss/_border.scss";
+	// @import "../node_modules/mol.color/scss/_line.scss";
+	// @import "../node_modules/mol.color/scss/_text.scss";
+	// @import "../node_modules/mol.color/scss/_image.scss";
+	// @import "../node_modules/mol.color/scss/_opacity.scss";

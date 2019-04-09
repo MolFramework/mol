@@ -8,7 +8,7 @@ Instala mol
 ```sh
 npm install --save-dev https://github.com/mol-project/mol.git
 ```
-Instala [sass](https://sass-lang.com/install)
+Instala [sass](https://sass-lang.com/install) si aún no lo tienes
 ```sh
 npm install -g sass
 ```
@@ -187,22 +187,55 @@ $m-spacevariations:   10;
 $m-grid:              10;
 
 $m-queries:
-    (xxs, 1rem,   29.999rem,  80%, inherit, inherit),
-    (xs,  30rem,  47.999rem,  80%, inherit, inherit),
-    (sm,  48rem,  63.999rem,  80%, inherit, inherit),
-    (md,  64rem,  74.999rem,  70%, inherit, inherit),
-    (lg,  75rem,  89.999rem,  70%, inherit, inherit),
-    (xl,  90rem,  119.999rem, 60%, inherit, inherit),
-    (xxl, 120rem, 9999rem,    60%, inherit, inherit);
+  (xxs, 1rem,   29.999rem,  80%, inherit, inherit),
+  (xs,  30rem,  47.999rem,  80%, inherit, inherit),
+  (sm,  48rem,  63.999rem,  80%, inherit, inherit),
+  (md,  64rem,  74.999rem,  70%, inherit, inherit),
+  (lg,  75rem,  89.999rem,  70%, inherit, inherit),
+  (xl,  90rem,  119.999rem, 60%, inherit, inherit),
+  (xxl, 120rem, 9999rem,    60%, inherit, inherit);
 
 ```
 
 #### Módulos
 ```text
-  mol.normalize
-  mol.core
-  mol.grid
-  mol.color
+mol.normalize/
+└── scss/
+  └── _normalize.scss
+
+mol.core/
+└── scss/
+  └── _core.scss
+    ├── _button.scss
+    ├── _form.scss
+    ├── _heading.scss
+    ├── _image.scss
+    ├── _link.scss
+    ├── _list.scss
+    ├── _table.scss
+    └── _typography.scss
+
+mol.grid/
+└── scss/
+  └── _grid.scss
+    ├── _cols.scss
+    ├── _containers.scss
+    ├── _display.scss
+    ├── _flex.scss
+    ├── _margins.scss
+    ├── _paddings.scss
+    ├── _rows.scss
+    └── _spacing.scss
+
+mol.color
+└── scss/
+  └── _colors.scss
+    ├── _background.scss
+    ├── _border.scss
+    ├── _image.scss
+    ├── _line.scss
+    └── _text.scss
+
 ```
 
 
