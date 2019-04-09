@@ -1,19 +1,36 @@
 # [mol](https://mol-project.github.io/mol/)
 
-#### Archivos
-```text
-mol/
-├── dist/
-│   ├── mol.min.css
-│   └── mol.min.css.map
-├── docs/
-│   ├── index.html
-│   ├── mol.css
-│   └── mol.css.map
-└── scss/
-├── _mol.scss
-├── _vars.scss
-└── mol.scss
+Librería modular de CSS
+
+## Uso e instalación
+
+Instala mol
+```sh
+npm install --save-dev https://github.com/mol-project/mol.git
+```
+Instala [sass](https://sass-lang.com/install)
+```sh
+npm install -g sass
+```
+
+Crea una carpeta en tu proyecto en donde guardar tus archivos de SCSS
+```sh
+mkdir scss
+```
+
+Copia el archivo de variables a la carpeta de tu proyecto
+```sh
+cp node_modules/mol/scss/_vars.scss scss/
+```
+
+Copia el archivo con la lista de módulos de mol
+```sh
+cp node_modules/mol/scss/_mol.scss scss/
+```
+
+Compila tu archivo de CSS
+```sh
+sass scss/_mol.scss:css/mol.min.css --style compressed
 ```
 
 
@@ -178,6 +195,14 @@ $m-queries:
     (xl,  90rem,  119.999rem, 60%, inherit, inherit),
     (xxl, 120rem, 9999rem,    60%, inherit, inherit);
 
+```
+
+#### Módulos
+```text
+  mol.normalize
+  mol.core
+  mol.grid
+  mol.color
 ```
 
 

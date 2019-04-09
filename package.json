@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "Modular CSS Library",
   "scripts": {
-    "dist": "sass scss/mol.scss:dist/mol.min.css --style compressed",
+    "dist": "sass scss/_mol.scss:dist/mol.min.css --style compressed",
     "docs": "npm run scss | npm run start",
     "start": "browser-sync start --server 'docs' --files 'docs'",
-    "scss": "sass --watch scss/mol.scss:docs/mol.css --style expanded"
+    "scss": "sass --watch scss/_mol.scss:docs/mol.css --style expanded"
   },
   "repository": {
     "type": "git",
