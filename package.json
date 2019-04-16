@@ -1,6 +1,6 @@
 {
   "name": "mol",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "Modular CSS Library",
   "scripts": {
     "dist": "sass scss/_mol.scss:dist/mol.min.css --style compressed",
@@ -28,10 +28,10 @@
   },
   "homepage": "https://github.com/mol-project/mol#readme",
   "dependencies": {
-    "mol.color": "git+https://github.com/mol-project/mol.color.git#v.1.1.0",
-    "mol.core": "git+https://github.com/mol-project/mol.core.git#v.3.0.0",
-    "mol.grid": "git+https://github.com/mol-project/mol.grid.git#v.2.0.0",
-    "mol.normalize": "git+https://github.com/mol-project/mol.normalize.git#v.2.0.1"
+    "mol.color": "git+https://github.com/mol-project/mol.color.git#v.1.2.0",
+    "mol.core": "git+https://github.com/mol-project/mol.core.git#v.3.1.0",
+    "mol.grid": "git+https://github.com/mol-project/mol.grid.git#v.2.1.0",
+    "mol.normalize": "git+https://github.com/mol-project/mol.normalize.git#v.2.0.3"
   },
   "devDependencies": {
     "browser-sync": "^2.26.3"

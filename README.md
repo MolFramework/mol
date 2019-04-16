@@ -43,7 +43,6 @@ $m-background:      #fff;
 $m-color:           #222029;
 $m-primary:         #32bdc6;
 
-$m-font-serif:      'PT Serif', serif;
 $m-font-family:     'Open Sans', sans-serif;
 $m-font-size:       16px;
 $m-font-weight:     400;
@@ -51,6 +50,8 @@ $m-letter-spacing:  normal;
 $m-line-height:     1.5em;
 
 $m-code-family:     monospace;
+
+$m-em-family:      'PT Serif', serif;
 
 $m-h-family:        'Josefin Sans', sans-serif;
 $m-h-size:          23px;
@@ -102,15 +103,16 @@ $m-btn-border-style:          solid;
 $m-striped-odd:               rgba($m-color, .05);
 $m-striped-even:              rgba($m-color, .1);
 
-$m-array-updown-button-colors:
-  (primary,   $m-primary,   $m-background,  $m-background,  $m-primary  ),
-  (secondary, $m-secondary, $m-background,  $m-background,  $m-secondary),
-  (accent,    $m-accent,    $m-background,  $m-background,  $m-accent   );
+$m-array-button-colors:
+  (primary,   $m-background, $m-primary,     $m-primary,    $m-background),
+  (secondary, $m-background, $m-secondary,   $m-secondary,  $m-background),
+  (accent,    $m-background, $m-accent,      $m-accent,     $m-background),
+  (note,      $m-background, $m-note,        $m-note,       $m-background);
 
-$m-array-side-button-colors:
-  (primary,   $m-primary,   $m-color,   $m-background,  $m-background ),
-  (secondary, $m-secondary, $m-color,   $m-background,  $m-background ),
-  (accent,    $m-accent,    $m-color,   $m-background,  $m-background );
+$m-array-solid-button-colors:
+  (primary,   mix($m-primary,$m-background,70%),    $m-primary,   $m-background,  $m-color),
+  (secondary, mix($m-secondary,$m-background,70%),  $m-secondary, $m-background,  $m-color),
+  (accent,    mix($m-accent,$m-background,70%),     $m-accent,    $m-background,  $m-color);
 
 $m-array-circle-button-colors:
   (primary,   $m-primary,   $m-primary,     $m-background,  $m-background ),
